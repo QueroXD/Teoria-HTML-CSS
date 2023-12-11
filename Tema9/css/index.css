@@ -1,0 +1,45 @@
+/* CSS -> Tema 9 - Web Responsive amb Flexbox*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav img{
+    height: 50px;
+    margin: 5px;
+}
+
+nav{
+    text-align: center;
+}
+
+.flex-contenedor{
+    min-height: 100vh;
+    background: dodgerblue;
+    display: flex; /* Adapta el contenido de dentro del contenedor */
+    flex-direction: row; /* Dispne los elementos en modo Fila o Columna (row o column) */
+    /* flex-direction --> Tambien invierte el orden de las filas y columnas */
+    flex-wrap: wrap; /* Ajusta los elementos en pantalla y mantienen el responsive */
+    justify-content: center; /* Centra los elementos de manera HORIZONTALMENTE  */
+    align-items: center; /* Centra los elemntos HORIZONTALMENTE */
+    align-content: center; /* Centra los elementos a las filas verticalmente */
+    /* space-between, space-arround, space-evenly, center, flex-start, flex-end */
+    /* space-between - deja el mismo espacio entre elementos */
+    /* space-arround - deja el mismo espacio en la derecha e izquierda */
+    /* space-evenly - deja el mismo espacio entre todos los elementos */
+}
+
+.flex-contenedor > div{
+    background: #f1f1f1f1;
+    width: 300px;
+    margin: 10px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+

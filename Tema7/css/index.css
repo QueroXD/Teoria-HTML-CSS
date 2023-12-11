@@ -1,0 +1,74 @@
+/* Tema 7 - Propiedades CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav img{
+    height: 50px;
+    margin: 5px;
+}
+
+nav{
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de letra */
+    font-size: 14px; /* Tamaño de la letra */
+    background: url(../img/botw.webp); /* Indicar fondo */
+    background-repeat: no-repeat; /* Desactivar modo "mosaico" */
+    background-size: 100%; /* Tamaño del fondo */
+    background-attachment: fixed; /* No se mueve al hacer scroll */
+}
+
+.contenedor{
+    /* display: inline-block; */
+    float: left; /* alinear */
+    box-sizing: border-box;
+
+    margin-top: 3%; /* Separar el texto de la parte de arriba de la pantalla */
+    padding: 10px; /* Separar el texto de su propia caja */
+
+    margin-left: 3.5vw; /* Separa la caja de la izquierda de la pantalla */
+    width: 20.5vw; /* Es lo mismo que el 30% pero es pk a veces no te deja poner % y pones esto */
+    /* height: 50vh; */
+
+    background: white; /* Rellenar de color el recuadro del texto */
+    border:solid 20px blue;  /* Caja para el texto */
+    border-top-width: 50px;
+    border-bottom-width: 50px;
+    border-color: rgb(49, 112, 13) rgb(8, 74, 15) rgb(49, 112, 13) rgb(8, 74, 15);
+    border-radius: 15px; /* Ponerlo redondo */
+    box-shadow: 5px 5px 10px; /* X - Y - Difuminacion */
+    text-align: justify; /* Se alinea el texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    word-spacing: 0px; /* Espaciado entre palabras */
+}
+
+.contenedor h2{
+    text-align: center;
+}
+
+.contenedor p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.imagen{
+    background: url(../img/ZeldaH.jpg);
+    width: 100%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background-size: 100% 100%; */
+    background-position: top center;
+}
+
+footer{
+    color: white;
+    margin-top: 3%;
+    text-align: center;
+}

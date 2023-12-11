@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 6 - CSS</title>
+    <meta name="author" content="Quero">
+    <link rel="shortcut icon" href="./img/logo_educem.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <h1>TEMA 6 - CSS</h1>
+        <nav id="indice">
+            <a href="../Tema5/index.html"><img src="./img/FlechaIzquierda.png" alt=""></a>
+            <a href="../Indice/index.html"><img src="./img/HomeBoton.png" alt=""></a>
+            <a href="../Tema7/index.html"><img src="./img/FlechaDerecha.png" alt=""></a>
+        </nav>
+    </header>
+    <main>
+        <h2>Introduccion:</h2>
+        <section>
+            <div>
+                <h3>Selector universal (*)</h3>
+                <p>Afecta a todas las etiquetas HTML</p>
+            </div>
+            <div>
+                <h3>Selector etiqueta (a)</h3>
+                <p>Hace referencia a la etiqueta HTML especifica</p>
+                <a href="#">Enlace visual</a>
+            </div>
+            <div>
+                <h3>Selector multiple</h3>
+                <p>Afecta a multiples etiquetas especificadas</p>
+                <h4>Titulo de tipo H4 de color verde</h4>
+                <div>
+                    <p>Hola</p>
+                </div>
+            </div>
+            <div>
+                <h3>Selector descendiente</h3>
+                <p>Afecta a todas las etiquetas internas</p>
+                <p>Todos los DIVS dentro de SECTIONS tiene bordes negros</p>
+            </div>
+            <div class="contenedor">
+                <h3>Selector class (punto)</h3>
+                <p>Afecta a las etiquetas con el mismo "class"</p>
+                <p>El atrivuto class se puede repetir multiples veces en una web</p>                
+            </div>
+            <div id="contenedorUnico">
+                <h3>Selector ID (#)</h3>
+                <p>Afeccta a una unica etiqueta, no se puede repetir</p>
+            </div>
+            <div id="hijoDirecto">
+                <h3>Selector hijo (&gt;)</h3>
+                <p>Afecta unicamente a las etiquetas hijas directas</p>
+                <p>Este parrafo es HIJO DIRECTO</p>
+                <span>
+                    <p>Este parrafo NO es hijo directo</p>
+                </span>
+            </div>
+            <div id="adyacente">
+                <h3>Selector adyacente o hermano (+)</h3>
+                <p>Afecta a la primera etiqueta hermana, es decir al mismo nivel.</p>
+                <p>Ejemplo con elemento P que es hermano de H3</p>
+            </div>
+            <div id="predecesor">
+                <h3>Selector Predecesor (~)</h3>
+                <p>Afecta nada mas al anterior etiqueta hermana</p>
+                <span>Si el predecesor es un H3 -- Pondremos el fondo negro</span>
+            </div>
+            <div id="atributo">
+                <h3>Selector atributo ( [nombre_atributo] )</h3>
+                <p>Afecta a las etiquetas que tienen un nombre concreto de atributo</p>
+                <a href="#">Atributo href</a>
+                <a href="#" class="atributoClass">Atributo class</a>
+                <a href="https://educem.com">href con valor</a>
+                <a href="#" class="classValor">class con valor</a>
+            </div>
+            <div id="inlineBloque">
+                <h3>Emento Bloque - Ocupa el 100% de la pantalla</h3>
+                <span>Elemento Inline 1</span>
+                <span>Elemento Inline 2</span>
+                <img src="./img/Botella_de_agua.webp" alt="Elemento Inline-Bloque">
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

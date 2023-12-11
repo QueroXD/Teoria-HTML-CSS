@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5 - Formulario</title>
+    <meta name="author" content="Quero">
+    <link rel="shortcut icon" href="./img/logo_educem.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>TEMA 5 - FORMULARIO</h1>
+        <nav>
+            <a href="../Tema4/index.html">Tema 4</a>
+            <a href="../Indice/index.html">Home</a>
+            <a href="../Tema6/index.html">Tema 6</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulario -->
+        <section>
+            <h2>Formulario</h2>
+            <form action="./formularioEnviado.html" target="_blank" method="get">
+                <!-- Label -->
+                <label for="idnombre">Nombre:</label>
+                <!-- Texto general -->
+                <input type="text" name="nombre" id="idnombre" required placeholder="Nombre">
+                <br>
+                Apellido: <input type="text" name="apellido" id="" placeholder="Apellido">
+                <br>
+                <!-- Contraseña -->
+                Contraseña: <input type="password" name="contraseña" id="" placeholder="Contraseña"> 
+                <br>
+                <!-- Correo -->
+                Correo: <input type="email" name="correo" id="" placeholder="Correo">
+                <br>
+                <!-- Archivos -->
+                Archivo: <input type="file" name="archivo" id="">
+                <br>
+                <!-- Telefono -->
+                Telefono: <input type="tel" name="telefono" id="" placeholder="Telefono">
+                <br>
+                <!-- Fecha -->
+                Fecha: <input type="date" name="fechas" id="">
+                <br>
+                <!-- Web -->
+                Web: <input type="url" name="web" id="">
+                <br>
+                <!-- Numero -->
+                numero: <input type="number" name="numero" id="">
+                <br>
+                <!-- Rango -->
+                Rango: <input type="range" name="rango" id="">
+                <br>
+                <!-- Seleccion multiple Checkbox -->
+                Checkbox <input type="checkbox" name="checkbox" id="">
+                <br>
+                <!-- Seleccion unica Radio -->
+                Radio: <input type="radio" name="radio" value="etiqueta" id="">
+                Radio2: <input type="radio" name="radio" value="etiqueta" id="">
+                <br>
+                <!-- Select -->
+                <select name="cosicas" id="">
+                    <option value="Select">Select</option>
+                    <option value="Select">Select</option>
+                    <option value="Select">Select</option>
+                </select>
+                <br>
+                <!-- Texto Area -->
+                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                <!-- Boton de enviar -->
+                <input type="submit" value="Enviar Formulario">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

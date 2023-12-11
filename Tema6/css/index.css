@@ -1,0 +1,102 @@
+/* Teoria TEMA 6 - CSS */
+
+/* Selector Universal - Afecta a todas las etiquetas (*) */
+
+*{
+    /* Te resetea el diseño por defecto que viene */
+    margin: 0;
+    padding: 0;
+}
+
+#indice img{
+    height: 50px;
+    margin: 5px;
+}
+
+#indice{
+    text-align: center;
+}
+
+/* Selector etiqueta - Hace referencia a la etiqueta HTML especifica (a) */
+div a{
+    text-decoration: none; /* Quitar el subrallado */
+    color: white; /* Cambiar el color */
+    border: solid 3px rgb(184, 11, 11);
+    background: grey;
+    padding: 0px;
+    margin: 0px;
+}
+/* Selector multiple (Coma) - Afecta a multiples etiquetas especificadas */
+h3,h4 {
+    color: green;
+}
+/* Selector descendiente (Espacio) - Afecta a TODAS las etiquetas internas */
+section div {
+    border: solid 3px black;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+header nav {
+    margin-top: 10px
+}
+/* selector class (Punt) - Afecta a las etiquetas con el mismo atributo "class" */
+/* Las etiquetas CLASS se pueden repetir a todos el documento */
+.contenedor {
+    background: paleturquoise;
+}
+
+/* Selector ID (#) - Afecta a una unica etiqueta, no se puede repetir */
+#contenedorUnico {
+    background: pink;
+}
+
+/* Selector Hijo (<) - Afecta a las etiquetas hijas directas */
+#hijoDirecto > p {
+    color: red;
+}
+
+/* Selector Adyacente o Hermano (+) - Afecta a la primera etiqueta hermana */
+#adyacente h3 + p {
+    font-weight: bold;
+}
+
+/* Selector Predecesor (~) - Afecta si existe una etiqueta hermana anterior */
+#predecesor h3 ~ span {
+    background: black;
+    color: white;
+}
+
+/* Selector atributo ( [nombre_atributo] ) - Afecta a las etiquetas que tienen un nombre concreto de atributo */
+#atributo a[href] {
+    border: solid 3px black;
+}
+
+#atributo a[class] {
+    border: solid 3px lime;
+}
+#atributo a[href="https://educem.com"] {
+    background: blueviolet;
+}
+
+#atributo a[class="classValor"] {
+    background: orangered;
+}
+
+/* Ementos Bloque, Inline y Inline-Bloque - Ocupa el 100% de la pantalla */
+/* Los elementos bloque pueden cambiar su amplitud (width) */
+#inlineBloque h3 {
+    border: solid 3px brown;
+    width: 60%;
+}
+
+/* Los elementos inline no pueden cambiar su amplitud (width) */
+#inlineBloque span {
+    border: solid 3px yellowgreen;
+}
+
+/* Los elementos Inline-Bloque pueden modificar el tamaño (width) */
+/* Se situa al lado si tiene espacio */
+#inlineBloque img {
+    width: 50px;
+}
