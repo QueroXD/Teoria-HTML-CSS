@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tema 3 - Textos, listas, enlances y tablas</title>
+        <meta name="description" content="Textos, listas, enlaces y tablas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Textos, listas, enlaces, tablas">
+        <meta name="author" content="Quero">
+        <link rel="shortcut icon" href="./img/logo_educem.png" type="image/x-icon">
+
+    </head>
+    <body>
+        <header>
+            <h1>TEMA 3 - Textos, listas, enlances y tablas</h1>
+            <nav>
+                <a href="../Tema2/index.html">Tema 2</a>
+                <a href="../Indice/index.html">Home</a>
+                <a href="../Tema4/index.html">Tema 4</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Titulos (H1- H6) -->
+            <section>
+                <h1>Los Titulos</h1>
+                <h1>Titulo numero 1</h1>
+                <h2>Titulo numero 2</h2>
+                <h3>Titulo numero 3</h3>
+                <h4>Titulo numero 4</h4>
+                <h5>Titulo numero 5</h5>
+                <h6>Titulo numero 6</h6>
+            </section>
+            <!-- Parrafos (p) -->
+            <section>
+                <h2>Parrafos</h2>
+                <p>
+                    Esto es un parrafo donde se puede explicar y escribir todo lo que quieras.  HTML me esta gustando bastante aunque solo este haciendo la parte sencilla, eso si hecho de menos un teclado 100%.
+                </p>
+            </section>
+            <hr>
+            <p>
+                Entre linea y linea <br> El espacio se arrima
+            </p>
+            <hr>
+            <!-- Texto preformateado -->
+            <section>
+                <h2>Texto preformateado</h2>
+                <pre>
+                #include &lt;stdio.h&gt;
+
+                int main()
+                {
+                        printf("Hola mundo");
+                        return 0;
+                }
+                </pre>
+            </section>
+            <hr>
+            <h3>Tipo de letras</h3>
+            <p>
+                Estas letras se van a volver <b>Negras</b>.
+            </p>
+            <p>
+                Estas letras tienen bastante <b>enfasis!</b>.
+            </p>
+            <hr>
+            <!-- Texto STRONG o Negrita -->
+            <section>
+                <h2>Texto fuerte o negrita</h2>
+                 <p>
+                     Estas letras son <strong>fuertes</strong>.
+                 </p>
+            </section>
+            <hr>
+            <!-- Contenedor general DIV y Contenedor de texto SPAN -->
+            <section>
+                <h2>Contenedores</h2>
+                <div>Todo el texto este se me va a ir a la verga entera</div> <!-- Contenedor de tipo bloque -->
+                <span>Voy a poner este chiquito.</span><!-- Contenedor de tipo inline -->
+                <span>Preparate porque me pongo de lado.</span> 
+            </section>
+            <hr>
+            <!-- Lista no numerada (UL)-->
+            <section>
+                <h2>Listas</h2>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                </ul>
+            </section>
+            <!-- Lista numerada (OL) -->
+            <section>
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                </ol>
+            </section>
+            <hr>
+            <!-- Texto Resaltado o Marcado -->
+            <section>
+                <h2>Texto resaltado</h2>
+                 <p>
+                    Voy a <mark>resaltar</mark> la palabra.
+                 </p>
+            </section>
+            <hr>  
+            <!-- Enlaces (A) Anchor -->
+            <section>
+                <h2>Enlaces varios</h2>
+                <a href="https://educem.com">Web de Educem pero con "link"</a>
+                <br>
+                <a href="https://educem.com" target="_blank" rel="noopener noreferrer">Web de Educem pero con "blank"</a>
+            </section>
+            <hr>
+            <!-- Tablas (TABLE) -->
+            <section>
+                <h2>Tablas</h2>
+                <h3>Tabla Simple</h3>
+                <table>
+                    <thead>
+                        <tr> <!-- Etiqueta de fila -->
+                            <th>Alumno</th> <!--Etiqueta de columna para el head -->
+                            <td>Nota</td> <!--Etiqueta de columna -->
+                        </tr> 
+                    </thead> <!-- Encabezado de la tabla -->
+                    <tbody>
+                        <tr>
+                            <td>Pep</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Joan</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody> <!-- Cuerpo de la tabla -->
+                    <tfoot>
+                        <tr>
+                            <td>Media</td>
+                            <td>7</td>
+                        </tr>
+                    </tfoot> <!-- Pie de la tabla -->
+                </table>
+            </section>
+            <!-- Tabla combinada -->
+            <section>
+                <h3>Tabla combinada</h3>
+                <table>
+                    <tr> <!-- Fila 1 -->
+                        <td colspan="2">Titulo 1</td>
+                        <td>X</td>
+                    </tr>
+                    <tr> <!-- Fila 2 -->
+                        <td>1</td>
+                        <td>2</td>
+                        <td rowspan="2">Titulo 2</td>
+                    </tr>
+                    <tr> <!-- Fila 3 -->
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <!-- Citas -->
+            <section>
+                <h2>Citando cosicas</h2>
+                <p>
+                    <cite>La Gioconda</cite> 
+                    Obra de Leonardo da Vinci. Pintado en el año 1503.
+                </p>
+            </section>
+            <q>Aqui va el texto citado</q>
+            <blockquote>
+                Y aqui iria la explicacion mas directa. O es al menos lo que yo entiendo.
+            </blockquote>
+        </main>
+    </body>
+</html>
